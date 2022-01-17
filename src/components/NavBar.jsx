@@ -7,24 +7,27 @@ const NavBar = ({ location }) => {
         let pathname = location.pathname.slice(1) || 'about';
         let highLighted = document.getElementById(`${pathname}-navlink`);
         if (highLighted && highLighted.classList) {
-            highLighted.classList.add('btn-secondary');
-            highLighted.classList.add('rounded');
+            highLighted.classList.add('active');
+            // highLighted.classList.add('');
         }
         return () => {
             // console.log(location.pathname);
             let pathname = location.pathname.slice(1) || 'about';
             let highLighted = document.getElementById(`${pathname}-navlink`);
             if (highLighted && highLighted.classList) {
-                if (highLighted.classList.contains('btn-secondary'))
-                    highLighted.classList.remove('btn-secondary');
-                if (highLighted.classList.contains('rounded'))
-                    highLighted.classList.remove('rounded');
+                if (highLighted.classList.contains('active'))
+                    highLighted.classList.remove('active');
+                // if (highLighted.classList.contains('rounded'))
+                // highLighted.classList.remove('rounded');
             }
         };
     }, [location]);
 
     return (
-        <nav className="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <nav
+            className={`navbar navbar-dark bg-dark navbar-expand-lg sticky-top`}
+            style={{ marginBottom: '1px' }}
+        >
             <div className="container-fluid">
                 <Link to="/" className="navbar-brand btn mb-0 h1 mx-3">
                     Harsha
@@ -44,12 +47,15 @@ const NavBar = ({ location }) => {
                     className="collapse navbar-collapse"
                     id="navbarSupportedContent"
                 >
-                    <ul className="navbar-nav mt-2 mt-lg-0 ms-auto mb-2 mb-lg-0">
+                    <ul
+                        className="navbar-nav mt-2 mt-lg-0 ms-auto mb-2 mb-lg-0"
+                        id="navbarText"
+                    >
                         <li className="nav-item mx-3">
                             <Link
                                 to="/"
                                 id="about-navlink"
-                                className={`nav-link active text-center shadow-none`}
+                                className={`nav-link text-center`}
                             >
                                 About
                             </Link>
@@ -58,7 +64,7 @@ const NavBar = ({ location }) => {
                             <Link
                                 to="/projects"
                                 id="projects-navlink"
-                                className={`nav-link active text-center shadow-none`}
+                                className={`nav-link text-center`}
                             >
                                 Projects
                             </Link>
@@ -67,7 +73,7 @@ const NavBar = ({ location }) => {
                             <Link
                                 to="/programming"
                                 id="programming-navlink"
-                                className={`nav-link active text-center shadow-none`}
+                                className={`nav-link text-center`}
                             >
                                 Programming
                             </Link>
@@ -76,7 +82,7 @@ const NavBar = ({ location }) => {
                             <Link
                                 id="working-navlink"
                                 to="/working"
-                                className={`nav-link active text-center shadow-none`}
+                                className={`nav-link text-center`}
                             >
                                 Working On
                             </Link>

@@ -1,6 +1,10 @@
-const Working = () => {
+const Working = ({ mode }) => {
+    const textMode = mode === 'dark' ? 'light' : 'dark';
+
     return (
-        <div className="d-flex justify-content-center align-items-center">
+        <div
+            className={`flex-grow-1 d-flex justify-content-center align-items-center bg-${mode} text-${textMode}`}
+        >
             <h1>Working on...</h1>
         </div>
     );
