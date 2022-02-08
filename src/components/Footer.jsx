@@ -28,7 +28,12 @@ const Footer = () => {
                 </a>
             </div>
             <div className="mx-2 mx-lg-4 my-auto">
-                <a href="/" className="link-light">
+                <a
+                    href="https://drive.google.com/file/d/1K_h3FeA3YG9AiUMp3Ieq1S1VPLf5doXZ/view?usp=sharing"
+                    target="_blank"
+                    className="link-light"
+                    rel="noreferrer"
+                >
                     Resume
                 </a>
             </div>
