@@ -1,71 +1,47 @@
+import { useState, useEffect } from 'react';
+import ProjectCard from './ProjectCard';
+
 const Projects = ({ mode }) => {
+    const [projects, setProjects] = useState([]);
     const textMode = mode === 'dark' ? 'light' : 'dark';
+    useEffect(() => {
+        setProjects([
+            {
+                projectName: `URL Shortener`,
+                mainIdea: `Create shorter URLs`,
+                description: [
+                    `Random, Custom short URLs`,
+                    `Rename short URLs`,
+                    `MongoDB , Express , ReactJS , NodeJS`
+                ],
+                repo: `https://github.com/harsha314/URL-Shortener-MERN`,
+                deployment: `https://app-bits.herokuapp.com`
+            },
+            {
+                projectName: `Expense Tracker API`,
+                mainIdea: ` Track your expenses's`,
+                description: [
+                    `Save Transactions`,
+                    `Check expenses in a period`,
+                    `MySQL , Express , NodeJS`
+                ],
+                repo: `https://github.com/harsha314/expense-tracker-api`,
+                deployment: ``
+            }
+        ]);
+    }, []);
     return (
         <div
             className={`flex-grow-1 d-flex justify-content-center align-items-center bg-${mode} text-${textMode}`}
         >
-            <div
-                className={`card bg-${mode} border border-${textMode} m-3`}
-                style={{ width: '24rem' }}
-            >
-                <div className="card-body">
-                    <h4 className="card-title text-center">URL Shortener</h4>
-                    <p className="card-text text-center h6">
-                        Create shorter URLs
-                    </p>
-                    <ol>
-                        <li className="text-center my-2">
-                            Random, Custom short URLs
-                        </li>
-                        <li className="text-center my-2">Rename short URLs</li>
-                        <li className="text-center my-2">
-                            <a
-                                href="https://app-bits.herokuapp.com"
-                                target="_blank"
-                                rel="noreferrer"
-                                className={`link-${textMode}`}
-                            >
-                                Deployment
-                            </a>
-                            <a
-                                href="https://github.com/harsha314/URL-Shortener-MERN"
-                                target="_blank"
-                                rel="noreferrer"
-                                className={`ms-2 link-${textMode}`}
-                            >
-                                Repo
-                            </a>
-                        </li>
-                    </ol>
-                </div>
-            </div>
-            <div
-                className={`card bg-${mode} border border-${textMode} m-3`}
-                style={{ width: '24rem' }}
-            >
-                <div className="card-body">
-                    <h4 className="card-title text-center">Expense Tracker</h4>
-                    <p className="card-text text-center h6">
-                        Track your expenses's API
-                    </p>
-                    <ol>
-                        <li className="text-center my-2">Save Transactions</li>
-                        <li className="text-center my-2">
-                            check Expenses in a period
-                        </li>
-                        <li className="text-center my-2">
-                            <a
-                                href="https://github.com/harsha314/expense-tracker-api"
-                                target="_blank"
-                                rel="noreferrer"
-                                className={`ms-2 link-${textMode}`}
-                            >
-                                Repo
-                            </a>
-                        </li>
-                    </ol>
-                </div>
-            </div>
+            {projects.map((project, index) => (
+                <ProjectCard
+                    key={index}
+                    props={project}
+                    mode={mode}
+                    textMode={textMode}
+                />
+            ))}
         </div>
     );
 };
