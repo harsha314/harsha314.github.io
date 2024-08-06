@@ -3,7 +3,7 @@
 ### TBD :
 
 - Basic App Structure
-- Pages: About, Experience, Projects, Hobbies, Blog
+- Pages: About, Experience, Projects, Hobbies, Blog.
 
 ### Done :
 
