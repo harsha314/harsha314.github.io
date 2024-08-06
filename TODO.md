@@ -3,7 +3,7 @@
 ### TBD :
 
 - Basic App Structure
-- Basic App Redux Store
+- Pages: About, Experience, Projects, Hobbies, Blog
 
 ### Done :
 
@@ -11,3 +11,4 @@
 - Install nvm
 - create react typescript app with vite
 - add react-redux, redux@toolkit, material ui
+- Basic App Redux Store
