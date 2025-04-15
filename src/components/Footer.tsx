@@ -1,8 +1,9 @@
 import React from "react";
-import { Box, IconButton, Typography } from "@mui/material";
+import { Box, IconButton, SvgIcon, Typography } from "@mui/material";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
-import TwitterIcon from "@mui/icons-material/Twitter";
+import { Code } from "@mui/icons-material";
+import LeetcodeIcon from "../Icons/LeetcodeIcon";
 
 const Footer: React.FC = () => {
   return (
@@ -16,19 +17,24 @@ const Footer: React.FC = () => {
       }}
     >
       <Box>
-        <IconButton href="https://github.com/yourusername" target="_blank">
+        <IconButton href="https://github.com/harsha314" target="_blank">
           <GitHubIcon />
         </IconButton>
-        <IconButton href="https://linkedin.com/in/yourusername" target="_blank">
+        <IconButton
+          href="https://linkedin.com/in/harsha-vardhan-ravupalli"
+          target="_blank"
+        >
           <LinkedInIcon />
         </IconButton>
-        <IconButton href="https://twitter.com/yourusername" target="_blank">
-          <TwitterIcon />
+        <IconButton href="https://leetcode.com/u/harsha3141/" target="_blank">
+          {/* <Code /> */}
+          <LeetcodeIcon />
+          {/* <SvgIcon component={LeetcodeIcon} inheritViewBox></SvgIcon> */}
         </IconButton>
       </Box>
-      <Typography variant="body2" color="textSecondary" sx={{ mt: 1 }}>
+      {/* <Typography variant="body2" color="textSecondary" sx={{ mt: 1 }}>
         © {new Date().getFullYear()} Your Name
-      </Typography>
+      </Typography> */}
     </Box>
   );
 };

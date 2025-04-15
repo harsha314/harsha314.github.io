@@ -2,7 +2,7 @@
 
 ### TBD :
 
-- Basic App Structure
+- Complete Navbar
 - Pages: About, Experience, Projects, Hobbies, Blog.
 
 ### Done :
@@ -12,3 +12,6 @@
 - create react typescript app with vite
 - add react-redux, redux@toolkit, material ui
 - Basic App Redux Store
+- Basic App Structure
+- installed material-ui
+- added navbar component

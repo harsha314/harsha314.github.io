@@ -17,7 +17,7 @@ import MenuIcon from "@mui/icons-material/Menu";
 import { NavLink } from "react-router-dom";
 
 const navItems = [
-  { label: "Home", to: "/" },
+  { label: "About", to: "/" },
   { label: "Projects", to: "/projects" },
   { label: "Experience", to: "/experience" },
   { label: "Working On...", to: "/working-on" },
