@@ -18,13 +18,13 @@ const Footer: React.FC = () => {
     >
       <Box>
         <IconButton href="https://github.com/harsha314" target="_blank">
-          <GitHubIcon />
+          <GitHubIcon style={{ width: "2rem", height: "2rem" }} />
         </IconButton>
         <IconButton
           href="https://linkedin.com/in/harsha-vardhan-ravupalli"
           target="_blank"
         >
-          <LinkedInIcon />
+          <LinkedInIcon style={{ width: "2rem", height: "2rem" }} />
         </IconButton>
         <IconButton href="https://leetcode.com/u/harsha3141/" target="_blank">
           {/* <Code /> */}

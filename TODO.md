@@ -4,6 +4,7 @@
 
 - Complete Navbar
 - Pages: About, Experience, Projects, Hobbies, Blog.
+- Experience : Detailed
 
 ### Done :
 
@@ -15,3 +16,4 @@
 - Basic App Structure
 - installed material-ui
 - added navbar component
+- Experience : Basics
