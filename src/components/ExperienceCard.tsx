@@ -42,7 +42,7 @@ const ExperienceCard: React.FC<ExperienceCardProps> = ({
             {title}
           </Typography>
           <Typography variant="subtitle2" color="text.secondary">
-            {company}
+            <b>{company}</b>
           </Typography>
           <Typography variant="caption" color="text.secondary">
             {duration}

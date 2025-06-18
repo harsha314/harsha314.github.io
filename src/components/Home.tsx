@@ -20,7 +20,7 @@ const Home: React.FC = () => {
             gutterBottom
             style={{ fontFamily: "Ubuntu Mono" }}
           >
-            I'm Harsha Vardhan
+            Harsha Vardhan
           </Typography>
           <Typography variant="h5" color="textSecondary">
             Software Engineer

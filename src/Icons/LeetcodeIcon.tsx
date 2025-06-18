@@ -1,7 +1,7 @@
 import React from "react";
 // import { ReactComponent as CustomSvg } from "../assets/leetcode-svgrepo-com.svg";
 
-const LeetcodeIcon: React.FC = (props) => {
+const LeetcodeIcon: React.FC = () => {
   return (
     <svg
       fill="#000000"
