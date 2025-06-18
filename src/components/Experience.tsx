@@ -9,14 +9,14 @@ function Experience() {
       company: "Verizon",
       duration: "09/2023 - Now",
       description:
-        "Worked as a full stack developer\nTech Stack : Java, Spring Boot, React, Postgres\n...",
+        "Worked as a full stack developer\nTech Stack : Java 11, Spring Boot, React, Postgres, PostGIS\n",
     },
     {
       title: "Software Engineer",
       company: "Optum",
       duration: "05/2022 - 08/2023",
       description:
-        "Worked as a full stack developer\nTech Stack : Java 8, Spring Boot, Angular, Postgres\n...\n",
+        "Worked as a full stack developer\nTech Stack : Java 8, Spring Boot, Angular, Postgres\n",
     },
     // { title: "Software Engineer", company: "", duration: "", description: "" },
   ];

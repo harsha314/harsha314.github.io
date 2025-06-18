@@ -20,7 +20,7 @@ const navItems = [
   { label: "About", to: "/" },
   { label: "Projects", to: "/projects" },
   { label: "Experience", to: "/experience" },
-  { label: "Working On...", to: "/working-on" },
+  { label: "Shelf", to: "/shelf" },
 ];
 
 const Navbar: React.FC = () => {
