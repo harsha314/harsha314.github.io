@@ -5,7 +5,7 @@ import {
   useCallback,
   useMemo,
 } from "react";
-import { PaletteMode } from "@mui/material";
+import { type PaletteMode } from "@mui/material";
 
 interface ThemeContextType {
   mode: PaletteMode;
