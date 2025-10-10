@@ -47,9 +47,8 @@ const Home = () => {
               mb: 4,
             }}
           >
-            I build modern web applications with a focus on user experience and
-            performance. Passionate about creating clean, maintainable code and
-            learning new technologies.
+            I'm a Software Engineer specializing in full-stack development.
+            Passionate about designing efficient and elegant solutions.
           </Typography>
 
           <Stack direction="row" spacing={2}>
@@ -62,7 +61,7 @@ const Home = () => {
             >
               View My Work
             </Button>
-            <Button
+            {/* <Button
               component={RouterLink}
               to="/contact"
               variant="outlined"
@@ -70,7 +69,7 @@ const Home = () => {
               sx={{ px: 4 }}
             >
               Contact Me
-            </Button>
+            </Button> */}
           </Stack>
         </Stack>
       </Container>

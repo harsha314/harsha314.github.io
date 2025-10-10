@@ -61,9 +61,9 @@ const Projects = () => {
   const queuedProjects = projects.filter(
     (project) => project.status === "queued"
   );
-  const archivedProjects = projects.filter(
-    (project) => project.status === "archived"
-  );
+  // const archivedProjects = projects.filter(
+  //   (project) => project.status === "archived"
+  // );
 
   return (
     <Box

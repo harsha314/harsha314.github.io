@@ -67,9 +67,8 @@ const About = () => {
             color="text.secondary"
             sx={{ lineHeight: 1.7 }}
           >
-            I'm a Software Engineer passionate about building web applications
-            and solving complex problems. I specialize in full-stack development
-            with expertise in Spring Boot, React, and TypeScript.
+            I'm a passionate Software Engineer. I specialize in full-stack
+            development with expertise in Spring Boot, React.
           </Typography>
         </Paper>
 
